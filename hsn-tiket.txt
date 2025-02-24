@@ -33,7 +33,7 @@ No HP TS KBM : 0812 48920250
 PIC : Ida
 No HP PIC : +62 857 11285934
 SN Perangkat : NXVLFSN00W1451DB2D7600
-Alamat Entitas: Alamat Entitas: Jl. Moh. Toha No.Km. 4, RT.009/RW.011, Periuk, Kec. Periuk, Kota Tangerang, Banten 15131
+Alamat Entitas: Jl. Moh. Toha No.Km. 4, RT.009/RW.011, Periuk, Kec. Periuk, Kota Tangerang, Banten 15131
 
 
 
