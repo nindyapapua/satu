@@ -1,7 +1,12 @@
 body{
   background: lightblue;
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  justify-items: center;
 }
 .content {
+
   width: 330px;
   padding: 40px 30px;
   background: #dde1e7;
