@@ -6,7 +6,7 @@ TS KBM : Nurindra
 No HP TS KBM : 0812 48920250
 PIC : Ari
 No HP PIC : +62 896-1765-4278
-SN Perangkat : DTVUSSN0031500171F3000
+SN Perangkat : 
 Alamat Entitas:  Jl. Raya Serang Km. 41, Desa. Cikande, Kec. Cikande, Kab. Serang
 
 
@@ -32,7 +32,7 @@ TS KBM : Nurindra
 No HP TS KBM : 0812 48920250
 PIC : Ida
 No HP PIC : +62 857 11285934
-SN Perangkat : NXVLFSN00W1451DB2D7600
+SN Perangkat : 
 Alamat Entitas: Jl. Moh. Toha No.Km. 4, RT.009/RW.011, Periuk, Kec. Periuk, Kota Tangerang, Banten 15131
 
 
@@ -45,6 +45,6 @@ TS KBM : Nurindra
 No HP TS KBM : 0812 48920250
 PIC : Agi Novan
 No HP PIC : +62 822217285
-SN Perangkat : NXVLFSN00W13820E397600
+SN Perangkat : 
 Alamat Entitas: Jl. Pelepah Raya No.5, RT.9/RW.5, Klp. Gading Bar., Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14240
 
