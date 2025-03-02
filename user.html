@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bram.css">
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+
+    <div id="mainContaineruser01">
+        <section id="sectUser01">
+            <!-- <button id="btnfetchAllKar" class="btn m3 tooltip btnStd">Tiket</button> -->
+            <input type="checkbox" name="" id="chkSHoutputser01">
+            <textarea name="txtoutputuser01" id="txtoutputuser01"></textarea>
+        </section>
+
+        <section id="sectUser02">
+            <input type="text" id="txtsearchuser" placeholder="Search..." />
+            <div class="radio-container">
+                <label>
+                    <input type="radio" name="rbfltr" value="nama" checked> Nama
+                </label>
+                <label>
+                    <input type="radio" name="rbfltr" value="nip"> NIP
+                </label>
+                <label>
+                    <input type="radio" name="rbfltr" value="pass"> Pass
+                </label>
+                <label>
+                    <input type="radio" name="rbfltr" value="bidang"> Bidang
+                </label>
+            </div>
+        </section>
+
+        <section id="sectUser03">
+            <div id="tblFrameUser01">
+                <table id="myTable">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>NIP</th>
+                            <th>Pass</th>
+                            <th>Bidang</th>
+                            <th class="pupuskalo">Seksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <template id="btn2svgtmpl">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                fill="currentColor">
+                <path
+                    d="M589-422h162v-70H589v70Zm0-130h162v-70H589v70ZM209-328h320v-5q0-40-42.5-67.5T369-428q-75 0-117.5 27.5T209-333v5Zm159.92-160q30.08 0 51.58-20.42t21.5-52.5Q442-592 420.58-613t-51.5-21q-30.08 0-51.58 20.92t-21.5 52q0 32.08 21.42 52.58t51.5 20.5ZM149-138q-37.17 0-64.09-26.91Q58-191.82 58-229v-502q0-37.59 26.91-64.79Q111.83-823 149-823h662q37.59 0 64.79 27.21Q903-768.59 903-731v502q0 37.18-27.21 64.09Q848.59-138 811-138H149Zm0-91h662v-502H149v502Zm0 0v-502 502Z" />
+            </svg>
+        </template>
+
+        <template id="btn3svgtmpl">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                fill="currentColor">
+                <path
+                    d="M423-679.75Q423-710 446.25-733t53.5-23q30.25 0 53.75 22.75t23.5 53Q577-649 553.75-626t-53.5 23q-30.25 0-53.75-22.75t-23.5-54ZM490 23 324-157l67-88-63-87 61-79v-35q-63-31-106-88.83T240-680q0-107.67 76.24-183.33 76.23-75.67 184-75.67Q608-939 684-863.33q76 75.66 76 183.33 0 79-38 137.5T611-446v347L490 23ZM320-680q0 61 41 112.5T468-502v119l-42 51 63 88-60 80 60 74 43-42v-371q70-15 109-63.9 39-48.89 39-113.1 0-75-52.5-127T500-859q-75 0-127.5 52T320-680Z" />
+            </svg>
+        </template>
+
+        <script src="user.js"></script>
+</body>
+
+</html>
