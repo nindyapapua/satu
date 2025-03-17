@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times Table</title>
+    <!-- <link rel="stylesheet" href="bram.css"> -->
+    <style>
+        body{
+            background: #fff;
+        }
+        h1{
+            margin: 10px auto;
+            width: 385px;
+        }
+        table {
+            width: 98%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            font: 10px;
+        }
+        th, td {
+            border: 1px solid  #222329;
+            padding: 4px;
+            text-align: center;
+        }
+        th {
+            background-color: #222329;
+            color: #fff;
+            font-weight: bold;
+        }
+        tr:nth-child(odd) {
+            background-color: #f3f3f3;
+        }
+        tr:nth-child(even) {
+            background-color: #fff;
+        }
+        th:nth-child(6), th:nth-child(5) {
+            display: none;
+        }
+        td:nth-child(6), td:nth-child(5) {
+            display: none;
+        }
+        tr:hover {
+            background-color: #D99E77;
+        }
+        .highlight {
+            background-color: #FABC5A !important; /* Yellow background for highlighting */
+            font-weight: bold; /* Optional: Make text bold */
+        }
+    </style>
+</head>
+<body>
+    <h1>Jadwal Imsakiyah 1446 H</h1>
+
+<table id="prayerTimesTable">
+    <thead>
+        <!-- Header row will be inserted here by JavaScript -->
+    </thead>
+    <tbody>
+        <!-- Data rows will be inserted here by JavaScript -->
+    </tbody>
+</table>
+<script src="imsak2025.js"></script>
+
+</body>
+</html>
