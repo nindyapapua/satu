@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0rem;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Space Mono', monospace;
+            font-size: 4rem;
+            color: white;
+            padding: 0rem clamp(1rem, 2vw, 3rem);
+            border-radius: clamp(0.4rem, 0.75vw, 1rem);
+        }
+
+        h1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .btnstd {
+            font-size: 1.6rem;
+            padding: 1rem;
+            border: 1px solid #0192ff;
+            background: #0192ff;
+            color: black;
+            border-radius: 8px;
+        }
+
+
+        .btnstd:hover {
+            background: black;
+            color: #0192ff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="judul1" data-value="Sedang dilakukan maintenance">Sedang dilakukan maintenance</h1>
+    <!-- <h1 id="judul2" data-value="Dengan proses pemindahan source database seluruh aplikasi">Dengan proses pemindahan source database seluruh aplikasi</h1> -->
+
+    <button id="btn01" class="btnstd" data-value="Login">Login</button>
+
+
+
+
+
+    <script>
+        // window.onload = function () {
+        //     let judulElement1 = document.getElementById("judul1");
+        //     if (judulElement1) { // Check if the element exists
+        //         rollChars(judulElement1);
+        //         console.log(judulElement1);
+        //     }
+        //     let judulElement2 = document.getElementById("judul2");
+        //     if (judulElement2) { // Check if the element exists
+        //         rollChars(judulElement2);
+        //         console.log(judulElement2);
+        //     }
+        // };
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        let interval = null;
+
+        document.getElementById("judul1").onmouseover = event => {
+            rollChars(event.target);
+            console.log(event.target);
+        }
+
+        document.getElementById("btn01").onmouseover = event => {
+            rollChars(event.target);
+            console.log(event.target)
+        }
+
+        function rollCharxs(elemen) {
+            let iteration = 0;
+            clearInterval(interval);
+
+            interval = setInterval(() => {
+                elemen.innerText = elemen.innerText
+                    .split("")
+                    .map((letter, index) => {
+                        if (index < iteration) {
+                            return elemen.dataset.value[index];
+                        }
+
+                        return letters[Math.floor(Math.random() * 26)]
+                    })
+                    .join("");
+
+                if (iteration >= elemen.dataset.value.length) {
+                    clearInterval(interval);
+                }
+
+                iteration += 1 / 3;
+            }, 30);
+        }
+
+        function rollChars(element) {
+            // Your rollChars function code here
+            let interval;
+            const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            let iteration = 0;
+            clearInterval(interval);
+
+            interval = setInterval(() => {
+                element.innerText = element.innerText
+                    .split("")
+                    .map((letter, index) => {
+                        if (index < iteration) {
+                            return element.dataset.value[index];
+                        }
+                        return letters[Math.floor(Math.random() * 26)];
+                    })
+                    .join("");
+
+                if (iteration >= element.dataset.value.length) {
+                    clearInterval(interval);
+                }
+
+                iteration += 1 / 3;
+            }, 30);
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
